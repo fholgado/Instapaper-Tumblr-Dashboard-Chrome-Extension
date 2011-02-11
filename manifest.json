@@ -1,0 +1,16 @@
+{
+  "name": "Instapaper Tumblr Dashboard",
+  "version": "0.1",
+  "description": "Add Instapaper Read Later links to regular posts in the Tumblr Dashboard.",
+  "background_page": "background.html",
+  "icons": {"128": "icon.png"},
+  "content_scripts": [
+    {
+      "matches": ["http://www.tumblr.com/dashboard/*"],
+      "js": ["jquery-1.5.min.js", "content.js"]
+    }
+  ],
+  "permissions": [
+    "http://www.tumblr.com/"
+  ]  
+}
